@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@300&display=swap" rel="stylesheet">
+    <title>Formulario</title>
+</head>
+<body>
+    <h1>Formulario de registro</h1>
+    <p>Preencha todos os campos</p>
+    <form method="post" action='https://register-demo.freecodecamp.org'>
+    <fieldset>
+        <label for="First-name">Nome: <input required type="text" id="Primeironome"/></label>
+        <label for="Last-name">Sobrenome: <input required type="text" id="Sobrenome"/></label>
+        <label for="email">Email: <input required type="email" id="email"/> </label>
+        <label for="new-password">Nova-Senha: <input minlength="8"  required type="password" id="Senha"/></label>
+    </fieldset>
+       
+    <fieldset >
+        <label for="Personal-acc" > Conta Pessoal <input class="inline" required name="tipo-de-conta" type="radio"> </label>
+        <label for="Enterprise-acc" >Conta Empresarial <input class="inline" required name="tipo-de-conta" type="radio"> </label>
+        <label for="terms"> Li e aceito os <a href="">termos de serviço</a> <input class="inline" required type="checkbox"> </label>
+    </fieldset>
+       
+    <fieldset>
+        <label for="Profile-Picture"> Envie uma foto de perfil: <input type="file" name="" id=""></label>
+
+        <label for="Age"> Selecione sua idade(anos): <input type="number" min="13" max="120">  </label> Como descobriu sobre esse Form?
+
+        <label for="Referrer">
+            <select name="Referrer" id="Referrer">
+                <option value=""> (Selecione uma)</option>
+                <option value="1"> News</option>
+                <option value="2"> YouTube</option>
+                <option value="3"> Forum</option>
+                <option value="4"> Outro</option>
+            </select>
+        </label>
+
+        <label for="bio">Fale sobre você: <textarea name="bio" id="bio" cols="30" rows="4" placeholder="Eu gosto de codar pois..."></textarea></label> 
+
+    </fieldset>
+    <input class="SendBotton" type="submit" value="Enviar">
+</body>
+</html>
